@@ -2,6 +2,7 @@ package net.space.callofthespace;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.space.callofthespace.block.ModBlocks;
 import net.space.callofthespace.item.ModItemGroups;
 import net.space.callofthespace.item.ModItems;
 import org.slf4j.Logger;
@@ -23,6 +24,7 @@ public class CallOfTheSpace implements ModInitializer {
 		// Proceed with mild caution.
 		ModItemGroups.registerItemGroup();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}
