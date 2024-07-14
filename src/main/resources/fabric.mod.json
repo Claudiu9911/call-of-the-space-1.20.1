@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "call-of-the-space",
+	"version": "${version}",
+	"name": "Call of the Space",
+	"description": "This is a Space Mod made by Luckyy84",
+	"authors": [
+		"Luckyy84"
+	],
+	"contact": {
+
+	},
+	"license": "MIT",
+	"icon": "assets/call-of-the-space/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.space.callofthespace.CallOfTheSpace"
+		],
+
+		"client": [
+			"net.space.callofthespace.CallOfTheSpaceClient"
+		],
+
+		"fabric-datagen": [
+			"net.space.callofthespace.CallOfTheSpaceDataGenerator"
+		]
+	},
+	"mixins": [
+		"call-of-the-space.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
