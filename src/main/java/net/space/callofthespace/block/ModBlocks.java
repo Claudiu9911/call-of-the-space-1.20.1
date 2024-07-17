@@ -1,7 +1,9 @@
 package net.space.callofthespace.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,6 +12,10 @@ import net.minecraft.util.Identifier;
 import net.space.callofthespace.CallOfTheSpace;
 
 public class ModBlocks {
+
+
+    public static final Block MERCURY_BLOCK = registerBlock("mercury_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
